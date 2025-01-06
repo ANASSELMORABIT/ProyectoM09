@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap");
+
+
+:root {
+    --light: #EAE8FF;
+    --secondary: #adb5bd;
+    --dark: #000000;
+    --primary-color: #000000;
+    --secondary-color: #B0D7FF;
+    --border: #e9ecef;
+    --white: white;
+    --blue: Blue;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #040a22;
+}
+
+.shadow {
+    box-shadow: rgba(239, 240, 241, 0.2) 0px 8px 24px;
+    transition: box-shadow 0.9s ease;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px;
+}
+.nav-title {
+    font-size: 28px; 
+    font-family: 'Press Start 2P', cursive; 
+    color: var(--secondary-color); 
+    margin-right: 50px; 
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}
+
+.nav-link {
+    font-size: 14px;
+    margin: 0 25px; 
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.search-box {
+    display: inline;
+    border-right: 1px solid var(--secondary);
+    padding-right: 12px;
+    margin-right: 10px;
+}
+
+.toggle-button {
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 8px 10px;
+    display: none;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Estilo del botón para alternar el tema */
+.theme-toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    color: #f5f5f5;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    color: #81a2be;
+}
+
+/* Estilo para el tema claro */
+body.light-theme {
+    background-color: #ffffff;
+    color: #040a22;
+}
+
+/* Estilo para el título en el modo claro */
+body.light-theme .nav-title {
+  color: #040a22;  /* Puedes cambiar este color según lo desees */
+}
+
+/* Estilo para el título en el modo oscuro */
+body:not(.light-theme) .nav-title {
+  color: var(--secondary-color); /* Mantén este color para el modo oscuro */
+}
+body.light-theme .navbar {
+    background-color: #f0f0f08a;
+}
+
+body.light-theme .nav-link {
+    color: #040a22;
+}
+
+body.light-theme .theme-toggle-btn {
+    color: #040a22;
+}
+
+/* Estilo para el tema claro */
+body.light-theme {
+    background-color: #ffffff;
+    color: #040a22; /* Texto oscuro para fondo claro */
+}
+
+body.light-theme .definition-container {
+    color: #040a22; /* Texto oscuro para la sección de definición */
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .definition-container h1 {
+    color: #0066cc; /* Título con color azul oscuro */
+}
+
+body.light-theme .definition-container p {
+    color: #333333; /* Texto gris oscuro para mejor contraste */
+}
+
+/* Cambiar colores del navbar en modo claro */
+body.light-theme .navbar {
+    background-color: #e0e0e0; /* Fondo claro para el navbar */
+}
+
+body.light-theme .nav-link {
+    color: #040a22; /* Texto oscuro en los enlaces del navbar */
+}
+
+body.light-theme .nav-link:hover {
+    color: #0066cc; /* Azul oscuro al pasar el mouse */
+}
+
+body.light-theme .theme-toggle-btn {
+    color: #333333; /* Icono oscuro */
+}
+
+
+
+
+
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.scrollable-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 80%;
+    padding: 20px;
+    scrollbar-width: thin; /* Para navegadores compatibles con CSS */
+    scrollbar-color: #11a8ff #1a2942;
+}
+
+/* Estilo de la barra de desplazamiento */
+.scrollable-cards::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra */
+}
+
+.scrollable-cards::-webkit-scrollbar-track {
+    background: #1a2942; /* Color de fondo de la pista */
+    border-radius: 10px;
+}
+
+.scrollable-cards::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, #11a8ff, #0d87cc); /* Color del thumb */
+    border-radius: 10px;
+}
+
+.card1 {
+    background: linear-gradient(145deg, #1b314b, #1e3a5b);
+    color: #f5f5f5;
+    flex: 0 0 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card1:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Soluciona problemas de distorsión de imagen */
+    border-bottom: 3px solid #11a8ff;
+    transition: transform 0.3s ease;
+}
+
+.card1:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #11a8ff;
+}
+
+.card-description {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 10px 20px 20px;
+    text-align: justify;
+}
+
+.carousel-btn {
+    background: linear-gradient(145deg, #11a8ff, #0d87cc);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-btn:hover {
+    background: linear-gradient(145deg, #0d87cc, #11a8ff);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-btn.prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn.next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+/* Cambiar borde de las tarjetas en modo claro */
+body.light-theme .card1 {
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  color: #040a22;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d1d1d1; /* Borde gris claro en modo claro */
+  border-radius: 15px; /* Esquinas más redondeadas */
+}
+
+/* Estilo de la tarjeta cuando está en modo claro */
+body.light-theme .card1:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más notoria al pasar el mouse */
+  border: 2px solid #a3a3a3; /* Borde ligeramente más oscuro en hover */
+}
+
+/* Añadir un borde y sombra sutil para las tarjetas en modo claro */
+body.light-theme .card1 .card-image {
+  border-bottom: 3px solid #c1c1c1; /* Borde sutil en la parte inferior de la imagen */
+}
+
+/* Mejorar el borde de las tarjetas en el modo claro */
+body.light-theme .card1 {
+  border: 2px solid #d1d1d1; /* Borde más suave en modo claro */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stacked {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Content */
+  
+  .content {
+    padding-left: 120px;
+    color: #c7c7c7c9;
+    user-select: none;
+  }
+  
+  .content h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #f76591, #ffc16f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+    margin-bottom: 36px;
+    padding-left: 10px;
+  }
+  
+  .content p {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    line-height: 1.6;
+    padding-right: 100px;
+    font-family: "Share Tech Mono", monospace;
+  }
+  
+  .btn {
+    background-color: #f76591;
+    background-image: linear-gradient(-180deg, #ffc16f, #f76591);
+    font-size: clamp(0.8rem, 8vw, 0.9rem);
+    font-weight: 600;
+    color: #fff;
+    width: max-content;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-top: 26px;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: auto;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 4px 10px rgba(145, 101, 247, 0.5);
+    transform: scale(0.98);
+  }
+  
+  /* Stacked Cards */
+  
+
+
+
+
+  .btn1 {
+    
+      position: relative;
+      display: inline-block;
+      padding: 11px 20px;
+      
+      color: #03e9f4;
+      background-color: #040a22;
+      font-size: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 5px;
+      left: 10px;
+      letter-spacing: 4px
+    }
+
+
+    .btn1:hover {
+      background: #222;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
+      z-index: 10;  /* Asegura que el botón esté por encima de otros elementos */
+  }
+  
+  
+
+  .btn1 span {
+    position: absolute;
+    display: block;
+  }
+
+
+
+
+
+  .btn1 span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .btn1 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .btn1 span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .btn1 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+
+  .stack {
+    position: relative;
+  }
+  
+  .stack .card {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 500px;
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
+      0 15px 20px 0 rgba(0, 0, 0, 0.125);
+    transition: transform 0.6s;
+    user-select: none;
+  }
+  
+  .stack .card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  .stack .card:nth-last-child(n + 5) {
+    --x: calc(-50% + 90px);
+    transform: translate(var(--x), -50%) scale(0.85);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01);
+  }
+  
+  .stack .card:nth-last-child(4) {
+    --x: calc(-50% + 60px);
+    transform: translate(var(--x), -50%) scale(0.9);
+  }
+  
+  .stack .card:nth-last-child(3) {
+    --x: calc(-50% + 30px);
+    transform: translate(var(--x), -50%) scale(0.95);
+  }
+  
+  .stack .card:nth-last-child(2) {
+    --x: calc(-50%);
+    transform: translate(var(--x), -50%) scale(1);
+  }
+  
+  .stack .card:nth-last-child(1) {
+    --x: calc(-50% - 30px);
+    transform: translate(var(--x), -50%) scale(1.05);
+  }
+  
+  .stack .card:nth-last-child(1) img {
+    box-shadow: 0 1px 5px 5px rgba(253, 253, 252, 0.5);
+  }
+  
+  .swap {
+    animation: swap 1.3s ease-out forwards;
+  }
+  
+  @keyframes swap {
+    30% {
+      transform: translate(calc(var(--x) - 250px), -50%) scale(0.85) rotate(-5deg)
+        rotateY(65deg);
+    }
+    100% {
+      transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+      z-index: -1;
+    }
+  }
+  
+
+  
+  @media (max-width: 1200px) {
+    @keyframes swap {
+      30% {
+        transform: translate(calc(var(--x) - 200px), -50%) scale(0.85)
+          rotate(-5deg) rotateY(65deg);
+      }
+  
+      100% {
+        transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+        z-index: -1;
+      }
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    @keyframes swap {
+      30% {
+        transform: translate(calc(var(--x) - 150px), -50%) scale(0.85)
+          rotate(-5deg) rotateY(65deg);
+      }
+  
+      100% {
+        transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+        z-index: -1;
+      }
+    }
+  }
+  
+  /* Media queries for other classes */
+  
+  @media (max-width: 1200px) {
+    .content {
+      padding-left: 80px;
+    }
+  
+    .content p {
+      padding-right: 40px;
+    }
+  
+    .card {
+      width: 250px;
+      height: 380px;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    .content {
+      padding-left: 60px;
+    }
+  
+    .content p {
+      line-height: 1.5;
+    }
+  
+    .card {
+      width: 220px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .content p {
+      padding-right: 0;
+    }
+  
+    .card {
+      width: 200px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4fr 3fr;
+      grid-template-areas:
+        "stacked"
+        "content";
+    }
+  
+    .content {
+      grid-area: content;
+      text-align: center;
+      padding: 0 90px;
+    }
+  
+    .btn {
+      margin-bottom: 30px;
+    }
+  
+    .stack {
+      grid-area: stacked;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    main {
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    .content {
+      padding: 0 50px;
+    }
+  
+    .content h1 {
+      padding-left: 0;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+    }
+  
+    .card {
+      width: 180px;
+      height: 260px;
+    }
+  }
+  
+
+  /* Estilo para el texto en el modo claro */
+body.light-theme .content {
+    color: #040a22;  /* Color de texto oscuro para el modo claro */
+}
+
+body.light-theme .content h1 {
+    background: -webkit-linear-gradient(0deg, #0066cc, #3399ff);  /* Cambia el color del gradiente en el título */
+    color: transparent;  /* Asegura que el gradiente se vea */
+    -webkit-background-clip: text; /* Asegura que el color se aplique solo al texto */
+}
+
+body.light-theme .content p {
+    color: #333333; /* Texto gris oscuro en párrafos */
+}
+
+/* Estilo para el texto en el modo oscuro */
+body:not(.light-theme) .content {
+    color: #c7c7c7c9; /* Color de texto gris claro para el modo oscuro */
+}
+
+body:not(.light-theme) .content h1 {
+    background: -webkit-linear-gradient(0deg, #f76591, #ffc16f); /* El gradiente sigue siendo el mismo para el modo oscuro */
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+body:not(.light-theme) .content p {
+    color: #c7c7c7c9; /* Texto gris claro en los párrafos */
+}
