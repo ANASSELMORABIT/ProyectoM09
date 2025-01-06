@@ -88,14 +88,7 @@ body {
     outline: none;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    margin-right: 20px;
-}
+
 
 /* Estilo del botón para alternar el tema */
 .theme-toggle-btn {
@@ -372,7 +365,7 @@ body.light-theme .card1 {
     font-family: 'Press Start 2P', cursive;
     font-size: clamp(1.5rem, 2vw, 3rem);
     font-weight: 700;
-    background: -webkit-linear-gradient(0deg, #f76591, #ffc16f);
+    
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -761,4 +754,73 @@ body:not(.light-theme) .content h1 {
 
 body:not(.light-theme) .content p {
     color: #c7c7c7c9; /* Texto gris claro en los párrafos */
+}
+
+/* Estilo del Footer */
+.footer {
+  
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #444; /* Línea delgada arriba para separar */
+  
+  margin-top: 50px; /* Espacio arriba */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer-icons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre íconos */
+}
+
+.footer-icon {
+  font-size: 35px; /* Tamaño grande para íconos */
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transición suave para los efectos */
+  display: inline-block;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #444; /* Fondo oscuro para los iconos */
+  box-shadow: 0 0 5px #5b37eb,
+  0 0 25px #5b37eb,
+  0 0 50px #f1307e,
+  0 0 100px #f1307e;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+  background-color: #f1c40f; /* Cambio de color al dorado */
+  color: #333; /* Cambia el color del ícono */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más grande en hover */
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 20px;
+  font-weight: 300; /* Texto más suave */
+}
+
+/* Asegura que el footer se mantenga al fondo */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }

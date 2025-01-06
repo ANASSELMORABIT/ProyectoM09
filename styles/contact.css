@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap");
+
+
+:root {
+    --light: #EAE8FF;
+    --secondary: #adb5bd;
+    --dark: #000000;
+    --primary-color: #000000;
+    --secondary-color: #B0D7FF;
+    --border: #e9ecef;
+    --white: white;
+    --blue: Blue;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, p {
+    color: var(--text-color);
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #040a22;
+}
+
+
+/* Estilo para el fondo y el texto en el tema oscuro */
+body.dark-theme {
+    background-color: #f5f5f5; /* Fondo claro para el modo oscuro */
+    color: #000000; /* Texto oscuro */
+}
+
+/* Estilo para los enlaces del navbar en el tema oscuro */
+.nav-link.dark-navbar-link {
+    color: #333; /* Color oscuro para los enlaces */
+}
+
+.nav-link.dark-navbar-link:hover {
+    color: #666; /* Color más oscuro para el hover */
+}
+
+/* Estilo para el título del navbar en el tema oscuro */
+.nav-title.dark-navbar-title {
+    color: #000; /* Color oscuro para el título */
+}
+
+.shadow {
+    box-shadow: rgba(239, 240, 241, 0.2) 0px 8px 24px;
+    transition: box-shadow 0.9s ease;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px;
+}
+.nav-title {
+    font-size: 28px; 
+    font-family: 'Press Start 2P', cursive; 
+    color: var(--secondary-color); 
+    margin-right: 50px; 
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}
+
+.nav-link {
+    font-size: 14px;
+    margin: 0 25px; 
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+
+
+.toggle-button {
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 8px 10px;
+    display: none;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+
+.theme-toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    color: #f5f5f5;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    color: #81a2be;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 80px;
+    min-height: 80vh;
+  }
+  
+  .contact-container .content {
+    color: #c7c7c7c9;
+  }
+  
+  .contact-container .content h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+  
+  .contact-container .content p {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .contact-form {
+    background: linear-gradient(145deg, #1b314b, #1e3a5b);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-family: 'DM Sans', sans-serif;
+    color: #f5f5f5;
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #1a2942;
+    color: #fff;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #11a8ff;
+    box-shadow: 0 0 5px rgba(17, 168, 255, 0.5);
+  }
+  
+  .contact-form button {
+    background: linear-gradient(145deg, #11a8ff, #0d87cc);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(145deg, #0d87cc, #11a8ff);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #444; 
+    
+    margin-top: 50px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .footer-icons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+  }
+  
+  .footer-icon {
+    font-size: 35px; 
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: #444; 
+
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1); 
+    background-color: #f1c40f; 
+    color: #333; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 20px;
+    font-weight: 300; 
+    text-align: center;
+  }
+  
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  

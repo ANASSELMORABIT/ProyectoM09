@@ -1,209 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
-        integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+      integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+      crossorigin="anonymous"
+    />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header id="header" class="shadow bg-dark">
-        <nav class="container navbar">
-            <span class="nav-title text-light">RetRoGames</span>
-            
-            <button class="toggle-button">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
-            
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <a href="#" class="nav-link text-light">Home</a>
-                    <a href="article.html" class="nav-link text-light">Articles</a>
-                    <a href="About.html" class="nav-link text-light">About RetroGames</a>
-                    <a href="contact.html" class="nav-link text-light">Contact</a>
-                </ul>
-            </div>
-            
-            
-            <button id="theme-toggle" class="theme-toggle-btn">
-                <i class="fas fa-adjust"></i>
-            </button>
-        </nav>
+      <nav class="container navbar">
+        <span class="nav-title text-light">RetRoGames</span>
+
+        <button class="toggle-button">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <a href="#" class="nav-link text-light">Home</a>
+            <a href="article.html" class="nav-link text-light">Articles</a>
+            <a href="About.html" class="nav-link text-light"
+              >About RetroGames</a
+            >
+            <a href="contact.html" class="nav-link text-light">Contact</a>
+          </ul>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle-btn">
+          <i class="fas fa-adjust"></i>
+        </button>
+      </nav>
     </header>
 
-
     <main class="stacked" id="main-content">
-        <div class="content" id="main-content">
-          <h1>¿Qué es RetroGames?</h1>
-          <p>
-            Los juegos retro son videojuegos que evocan nostalgia, ya sea porque son títulos antiguos o juegos modernos diseñados con una estética clásica.
-                Estos juegos a menudo reflejan el estilo, los gráficos y las mecánicas de juego de generaciones anteriores, desde las eras de 8 bits y 16 bits
-                hasta los clásicos de las arcades de los años 70, 80 y 90. Los juegos retro nos traen de vuelta la magia de tiempos más simples y nos recuerdan
-                las raíces de los videojuegos modernos.
+      <div class="content" id="main-content">
+        <h1>¿Qué es RetroGames?</h1>
+        <p>
+          Los juegos retro son videojuegos que evocan nostalgia, ya sea porque
+          son títulos antiguos o juegos modernos diseñados con una estética
+          clásica. Estos juegos a menudo reflejan el estilo, los gráficos y las
+          mecánicas de juego de generaciones anteriores, desde las eras de 8
+          bits y 16 bits hasta los clásicos de las arcades de los años 70, 80 y
+          90. Los juegos retro nos traen de vuelta la magia de tiempos más
+          simples y nos recuerdan las raíces de los videojuegos modernos.
+        </p>
+        <button class="btn" id="explore-btn">Explorar más</button>
+      </div>
+
+      <div class="stack">
+        <div class="card">
+          <img src="./asserts/Foto1.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="./asserts/img2.png" alt="" />
+        </div>
+        <div class="card">
+          <img src="./asserts/img3.jpeg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./asserts/Foto2.jpg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./asserts/Foto3.jpg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./asserts/img6.jpeg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <section class="carousel" id="carousel-section">
+      <button class="btn1 prev" style="left: -10px">
+        <i class="fas fa-chevron-left"></i>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Anterior
+      </button>
+
+      <div class="scrollable-cards">
+        <div class="card1">
+          <img
+            src="./asserts/img1.jpeg"
+            alt="PlayStation 2"
+            class="card-image"
+          />
+          <h3 class="card-title">PlayStation 2</h3>
+          <p class="card-description">
+            Lanzada por Sony en el año 2000, la PlayStation 2 se convirtió en
+            una de las consolas más exitosas de la historia, con más de 155
+            millones de unidades vendidas. Su capacidad para reproducir DVDs y
+            su retrocompatibilidad con juegos de PlayStation 1 la hicieron
+            revolucionaria. La consola ofreció una vasta biblioteca de títulos
+            icónicos como Final Fantasy X, GTA: San Andreas y Shadow of the
+            colossus, que marcaron una generación. La PS2 fue clave en la
+            evolución de los videojuegos y el entretenimiento casero,
+            manteniéndose vigente durante más de una década
           </p>
-          <button class="btn" id="explore-btn">Explorar más</button>
         </div>
-  
-        <div class="stack">
-          <div class="card">
-            <img
-              src="./asserts/Foto1.webp"
-              alt="" />
-          </div>
-          <div class="card">
-            <img
-              src="./asserts/img2.png"
-              alt="" />
-          </div>
-          <div class="card">
-            <img
-              src="./asserts/img3.jpeg"
-              alt="" />
-          </div>
-          <div class="card">
-            <img
-              src="./asserts/Foto2.jpg"
-              alt="" />
-          </div>
-          <div class="card">
-            <img
-              src="./asserts/Foto3.jpg"
-              alt="" />
-          </div>
-          <div class="card">
-            <img
-              src="./asserts/img6.jpeg"
-              alt="" />
-          </div>
+        <div class="card1">
+          <img
+            src="./asserts/img2.png"
+            alt="Fatal Frame II: Crimson Butterfly"
+            class="card-image"
+          />
+          <h3 class="card-title">Fatal Frame II: Crimson Butterfly</h3>
+          <p class="card-description">
+            En esta entrega de terror psicológico, las gemelas Mio y Mayu
+            Amakura se adentran en un pueblo abandonado lleno de espíritus
+            atormentados tras seguir a una mariposa carmesí. El juego destaca
+            por su atmósfera opresiva y sus encuentros escalofriantes con
+            fantasmas. La única herramienta de defensa es la Cámara Oscura, una
+            cámara especial capaz de exorcizar espíritus al capturarlos en
+            fotografías, lo que obliga a los jugadores a enfrentarse cara a cara
+            con el horror. La historia está cargada de tragedia, misterio y un
+            ambiente que te mantiene en tensión constante.
+          </p>
         </div>
-      </main>
+        <div class="card1">
+          <img
+            src="./asserts/img3.jpeg"
+            alt="Shadow of the colossus"
+            class="card-image"
+          />
+          <h3 class="card-title">Shadow of the colossus</h3>
+          <p class="card-description">
+            Este título icónico sigue la historia de Wander, quien viaja a una
+            tierra desolada para traer de vuelta a la vida a una joven llamada
+            Mono. Para lograrlo, debe derrotar a 16 colosos, gigantes
+            impresionantes que actúan como enormes rompecabezas vivientes. El
+            juego se caracteriza por su mundo minimalista y vasto, sin enemigos
+            menores, enfocándose únicamente en las batallas monumentales contra
+            estas criaturas. Su atmósfera melancólica, su emotiva banda sonora y
+            la sensación de soledad convierten la aventura en una experiencia
+            artística y emocional única
+          </p>
+        </div>
 
-      <section class="carousel" id="carousel-section">
-        
-        <button class="btn1 prev" style="left: -10px;"><i class="fas fa-chevron-left"></i>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span> 
-            Anterior</button>
-
-        <div class="scrollable-cards">
-            <div class="card1">
-                <img src="./asserts/img1.jpeg" alt="PlayStation 2" class="card-image">
-                <h3 class="card-title">PlayStation 2</h3>
-                <p class="card-description">
-                    Lanzada por Sony en el año 2000, la PlayStation 2 se convirtió en una de las consolas más exitosas de la historia, con más de 155 millones de unidades vendidas.
-                    Su capacidad para reproducir DVDs y su retrocompatibilidad con juegos de PlayStation 1 la hicieron revolucionaria. 
-                    La consola ofreció una vasta biblioteca de títulos icónicos como Final Fantasy X, GTA: San Andreas y Shadow of the colossus, que marcaron una generación.
-                    La PS2 fue clave en la evolución de los videojuegos y el entretenimiento casero, manteniéndose vigente durante más de una década
-                </p>
-            </div>
-            <div class="card1">
-                <img src="./asserts/img2.png" alt="Fatal Frame II: Crimson Butterfly" class="card-image">
-                <h3 class="card-title">Fatal Frame II: Crimson Butterfly</h3>
-                <p class="card-description">
-                    En esta entrega de terror psicológico, las gemelas Mio y Mayu Amakura se adentran en un pueblo abandonado lleno de espíritus atormentados tras seguir a una mariposa carmesí.
-                    El juego destaca por su atmósfera opresiva y sus encuentros escalofriantes con fantasmas. 
-                    La única herramienta de defensa es la Cámara Oscura, una cámara especial capaz de exorcizar espíritus al capturarlos en fotografías, lo que obliga a los jugadores a enfrentarse cara a cara con el horror. 
-                    La historia está cargada de tragedia, misterio y un ambiente que te mantiene en tensión constante.
-                </p>
-            </div>
-            <div class="card1">
-                <img src="./asserts/img3.jpeg" alt="Shadow of the colossus" class="card-image">
-                <h3 class="card-title">Shadow of the colossus</h3>
-                <p class="card-description">
-                    Este título icónico sigue la historia de Wander, quien viaja a una tierra desolada para traer de vuelta a la vida a una joven llamada Mono. Para lograrlo, 
-                    debe derrotar a 16 colosos, gigantes impresionantes que actúan como enormes rompecabezas vivientes. El juego se caracteriza por su mundo minimalista y vasto, 
-                    sin enemigos menores, enfocándose únicamente en las batallas monumentales contra estas criaturas. 
-                    Su atmósfera melancólica, su emotiva banda sonora y la sensación de soledad convierten la aventura en una experiencia artística y emocional única
-                </p>
-            </div>
-            
-            
-             <div class="card1">
-                <img src="./asserts/img4.jpeg" alt="Metal Gear Solid 3: Snake Eater" class="card-image">
-                <h3 class="card-title">Metal Gear Solid 3: Snake Eater</h3>
-                <p class="card-description">
-                    Ambientado en plena Guerra Fría, este título sigue a Naked Snake en una misión para rescatar a un científico y detener el desarrollo de una superarma nuclear. 
-                    Introduce mecánicas de supervivencia en la jungla, como cazar animales, curar heridas y usar camuflaje para ocultarse. La narrativa es rica y compleja, 
-                    con personajes memorables como The Boss, una figura clave en la historia, y villanos carismáticos como Volgin y The Cobra Unit. 
-                    Con momentos impactantes y giros inesperados, el juego revela el origen del mito de Big Boss mientras combina sigilo, acción táctica y drama emocional.
-                </p>
-            </div>
-            <div class="card1">
-                <img src="./asserts/img5.jpeg" alt="PC años 2000" class="card-image">
-                <h3 class="card-title">PC años 2000</h3>
-                <p class="card-description">
-                    Durante los años 2000, las PC experimentaron un salto tecnológico enorme con el avance de tarjetas gráficas como las GeForce y Radeon, lo que permitió gráficos más realistas y complejos. 
-                    Esta época vio nacer títulos revolucionarios como Half-Life 2, World of Warcraft y The Sims, que redefinieron géneros y aprovecharon el potencial del hardware en constante evolución. 
-                    El auge del multijugador online y los juegos en red también cambió la forma en que los jugadores interactuaban, 
-                    conectando a millones a través de Internet y estableciendo las bases del gaming moderno.
-                </p>
-            </div>
-            <div class="card1">
-                <img src="./asserts/img6.jpeg" alt="World of Warcraft" class="card-image">
-                <h3 class="card-title">World of Warcraft</h3>
-                <p class="card-description">
-                    Lanzado en 2004 por Blizzard, World of Warcraft revolucionó el género MMORPG al ofrecer un vasto mundo abierto en el universo de Warcraft. 
-                    Los jugadores crean personajes personalizados y exploran Azeroth, completando misiones, luchando contra monstruos y participando en épicas batallas PvP y PvE. 
-                    Con su enfoque en la cooperación, las hermandades y el contenido endgame, el juego marcó un hito al unir a millones de jugadores en línea, estableciendo una experiencia social y competitiva única.
-                </p>
-            </div>
-            
-            <div class="card1">
-                <img src="./asserts/img7.jpeg" alt="Half - Life 2" class="card-image">
-                <h3 class="card-title">Half - Life 2</h3>
-                <p class="card-description">
-                    Publicado en 2004 por Valve, Half-Life 2 es un shooter en primera persona que sigue a Gordon Freeman en su lucha contra el opresivo imperio Combine. 
-                    El juego revolucionó el género con su motor Source, introduciendo físicas avanzadas, una narrativa envolvente y un diseño de niveles espectacular. 
-                    A través de su mundo distópico, enemigos desafiantes y mecánicas innovadoras, como la Gravity Gun, Half-Life 2 se convirtió en un referente para los FPS y un clásico indiscutible.
-                </p>
-            </div>
-            <div class="card1">
-                <img src="./asserts/img8.jpeg" alt="Shadow of the Colossus" class="card-image">
-                <h3 class="card-title">Diablo 2</h3>
-                <p class="card-description">
-                    Lanzado en 2000 por Blizzard, Diablo II es un juego de rol de acción que perfeccionó el género con su sistema de loot, progresión de personajes y combate isométrico. 
-                    Los jugadores eligen entre cinco clases heroicas y recorren mazmorras generadas aleatoriamente para derrotar hordas de demonios y al propio Diablo. 
-                    Su atmósfera oscura, multijugador cooperativo y sistema de personalización lo convirtieron en un título adictivo que influenció innumerables juegos del género ARPG.
-                </p>
-            </div>
+        <div class="card1">
+          <img
+            src="./asserts/img4.jpeg"
+            alt="Metal Gear Solid 3: Snake Eater"
+            class="card-image"
+          />
+          <h3 class="card-title">Metal Gear Solid 3: Snake Eater</h3>
+          <p class="card-description">
+            Ambientado en plena Guerra Fría, este título sigue a Naked Snake en
+            una misión para rescatar a un científico y detener el desarrollo de
+            una superarma nuclear. Introduce mecánicas de supervivencia en la
+            jungla, como cazar animales, curar heridas y usar camuflaje para
+            ocultarse. La narrativa es rica y compleja, con personajes
+            memorables como The Boss, una figura clave en la historia, y
+            villanos carismáticos como Volgin y The Cobra Unit. Con momentos
+            impactantes y giros inesperados, el juego revela el origen del mito
+            de Big Boss mientras combina sigilo, acción táctica y drama
+            emocional.
+          </p>
         </div>
-       
-        <button class="btn1 next"><i class="fas fa-chevron-right"></i>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span> 
-            Siguiente</button>
+        <div class="card1">
+          <img
+            src="./asserts/img5.jpeg"
+            alt="PC años 2000"
+            class="card-image"
+          />
+          <h3 class="card-title">PC años 2000</h3>
+          <p class="card-description">
+            Durante los años 2000, las PC experimentaron un salto tecnológico
+            enorme con el avance de tarjetas gráficas como las GeForce y Radeon,
+            lo que permitió gráficos más realistas y complejos. Esta época vio
+            nacer títulos revolucionarios como Half-Life 2, World of Warcraft y
+            The Sims, que redefinieron géneros y aprovecharon el potencial del
+            hardware en constante evolución. El auge del multijugador online y
+            los juegos en red también cambió la forma en que los jugadores
+            interactuaban, conectando a millones a través de Internet y
+            estableciendo las bases del gaming moderno.
+          </p>
+        </div>
+        <div class="card1">
+          <img
+            src="./asserts/img6.jpeg"
+            alt="World of Warcraft"
+            class="card-image"
+          />
+          <h3 class="card-title">World of Warcraft</h3>
+          <p class="card-description">
+            Lanzado en 2004 por Blizzard, World of Warcraft revolucionó el
+            género MMORPG al ofrecer un vasto mundo abierto en el universo de
+            Warcraft. Los jugadores crean personajes personalizados y exploran
+            Azeroth, completando misiones, luchando contra monstruos y
+            participando en épicas batallas PvP y PvE. Con su enfoque en la
+            cooperación, las hermandades y el contenido endgame, el juego marcó
+            un hito al unir a millones de jugadores en línea, estableciendo una
+            experiencia social y competitiva única.
+          </p>
+        </div>
+
+        <div class="card1">
+          <img
+            src="./asserts/img7.jpeg"
+            alt="Half - Life 2"
+            class="card-image"
+          />
+          <h3 class="card-title">Half - Life 2</h3>
+          <p class="card-description">
+            Publicado en 2004 por Valve, Half-Life 2 es un shooter en primera
+            persona que sigue a Gordon Freeman en su lucha contra el opresivo
+            imperio Combine. El juego revolucionó el género con su motor Source,
+            introduciendo físicas avanzadas, una narrativa envolvente y un
+            diseño de niveles espectacular. A través de su mundo distópico,
+            enemigos desafiantes y mecánicas innovadoras, como la Gravity Gun,
+            Half-Life 2 se convirtió en un referente para los FPS y un clásico
+            indiscutible.
+          </p>
+        </div>
+        <div class="card1">
+          <img
+            src="./asserts/img8.jpeg"
+            alt="Shadow of the Colossus"
+            class="card-image"
+          />
+          <h3 class="card-title">Diablo 2</h3>
+          <p class="card-description">
+            Lanzado en 2000 por Blizzard, Diablo II es un juego de rol de acción
+            que perfeccionó el género con su sistema de loot, progresión de
+            personajes y combate isométrico. Los jugadores eligen entre cinco
+            clases heroicas y recorren mazmorras generadas aleatoriamente para
+            derrotar hordas de demonios y al propio Diablo. Su atmósfera oscura,
+            multijugador cooperativo y sistema de personalización lo
+            convirtieron en un título adictivo que influenció innumerables
+            juegos del género ARPG.
+          </p>
+        </div>
+      </div>
+
+      <button class="btn1 next">
+        <i class="fas fa-chevron-right"></i>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Siguiente
+      </button>
     </section>
 
-
-
-    
-
-
-    
-
-    
-    
-    
-
-    
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-icons">
+          <a
+            href="https://github.com/ANASSELMORABIT/ProyectoM09"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://mail.google.com/" class="footer-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          © 2025 RetRoGames. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
 
     <script src="./JS/script.js"></script>
-</body>
+  </body>
 </html>
